@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+.sign-up-modal p,
+.sign-up-modal .form-checkbox label {
+		font-size: 1em;
+		font-weight: 300;
+}
+
+.sign-up-modal .form-checkbox label {
+		cursor: pointer;
+}
+
+/* BOARDER SURROUNDING THE FORM */
+.sign-up-modal {
+	font-family: "Roboto", arial, sans-serif;
+	color: #888282;
+	border-style: solid;
+	border-width: 3px;
+	width: 90%;
+	min-width: 400px;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 25px;
+	background-color: rgb(0, 0, 0);
+}
+
+.sign-up-modal form {
+		margin: 0 auto;
+		text-align: center;
+}
+
+.sign-up-modal input::-webkit-input-placeholder {
+		color: #fefefe;
+		opacity: 1;
+}
+
+.sign-up-modal input:focus::-webkit-input-placeholder {
+	color: #111;
+	opacity: .5;
+	transition: all 0.3s ease;
+}
+
+.sign-up-modal .input-container {
+	margin: 10px;
+	color: rgb(255, 246, 246);
+}
+
+.sign-up-modal input[type="email"],
+.sign-up-modal input[type="text"],
+.sign-up-modal input[type="password"],
+.sign-up-modal input[type="submit"]:focus {
+		outline: 0;
+}
+
+.sign-up-modal input[type="email"],
+.sign-up-modal input[type="text"],
+.sign-up-modal input[type="password"] {
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 10px;
+	border-width: 3px;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-style: solid;
+	background: url('transparent');
+}
+
+.sign-up-modal input[type="email"]:focus,
+.sign-up-modal input[type="text"]:focus,
+.sign-up-modal input[type="password"]:focus {
+		background: white;
+		transition: all 0.3s ease;
+		color: rgb(0, 0, 0);
+}
+
+.sign-up-modal a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.sign-up-modal a:hover {
+	color: rgb(11, 211, 199);
+}
+
+/* BUTTON STYLES */
+.sign-up-modal input[type="submit"] {
+	font-weight: 700;
+	font-size: 1.8em;
+	color: #111;
+	background: white;
+	border-style: none;
+	padding: 10px 50px;
+	margin: 10px 0 15px 0;
+	position: relative;
+	display: inline-block;
+	transition: all .1s linear;
+	border-width: 3px;
+}
+
+/* MAKING THE BUTTON ANIMATE AS PRESSED */
+.sign-up-modal input[type="submit"]:active {
+	transform: translateY(3px);
+	-webkit-transform: translateY(3px);
+	-ms-transform: translateY(3px);
+}
+
+/* STYLES FOR INSIDE OF CLOSE MODAL BUTTON */
+.sign-up-modal #close-modal-button:before {
+	content: '\2716';
+	font-size: 1.5em;
+	position: relative;
+	top: 10px;
+	left: 17px;
+}
+
+/* STYLES FOR THE INPUT FIELDS */
+@media only screen and (min-width: 768px) {
+	.sign-up-modal .password-input {
+		width: 47.5%;
+		margin-left: -11.5%;
+		border-radius: 5px;
+	}
+	.sign-up-modal .username-input {
+		width: 47.5%;
+		border-radius: 5px;
+	}
+	.sign-up-modal .email-input {
+		margin-bottom: 20px;
+		margin-top: 10px;
+		border-radius: 5px;
+	}
+	.sign-up-modal form {
+		width: 70%;
+		border-radius: 5px;
+	}
+}
+
+/* HORIZONTAL RULE IN FORM */
+hr.new5 {
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 5px;
+}
+
